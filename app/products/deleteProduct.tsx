@@ -23,7 +23,7 @@ export default function DeleteProduct({ product }: { product: Product }) {
         router.refresh()
         setIsOpen(false)
     }
-
+ 
     const handleModal = () => {
         setIsOpen(!isOpen)
     }
