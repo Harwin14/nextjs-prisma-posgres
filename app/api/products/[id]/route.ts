@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 export const DELETE = async (
     request: Request,
     { params }: { params: { id: string } }
-) => {
+) => { 
     const product = await prisma.product.delete({
         where: {
             id: Number(params.id),
